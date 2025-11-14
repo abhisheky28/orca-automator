@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Orca SEO Page Rule Automator",
+  "version": "1.0",
+  "description": "Automates the creation of SEO page rules in Orca from a Google Sheet.",
+  "permissions": [
+    "identity",
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://orca.myntra.com/adseo/pagerule/add/",
+    "https://sheets.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png"
+    }
+  },
+  "oauth2": {
+    "client_id": "754849623349-37noovfv419b6ffcpm85iqs0ukehl1fa.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/spreadsheets"
+    ]
+  },
+  "icons": {
+    "16": "icons/icon16.png"
+  }
+}
